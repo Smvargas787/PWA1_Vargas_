@@ -161,12 +161,22 @@
 
 
     //other math operations will result in a number
+    var myStr1 ="6" /2;
+    console.log("Number / String " , myStr1);
+    document.write("<br>" , "Number / String " , myStr1);
 
 
     //order of operations: ( ), *, /, +, -
+    var num4 = 4+(6 * 5 -10)/5;
+    console.log("Order of operation: ", num4);
+    document.write("<br>", "Order of operation: ", num4);
 
 
     //modulo example
+    var num5 = 10;
+    var num6 = 31;
+    console.log("Remainder: ", num5%num6);
+    document.write("<br>" , "Remainder: ", num5%num6);
 
 
 // arrays: (definition, indexing, getter/setter)
@@ -185,8 +195,23 @@
      - in javascript, arrays are constructed by the brackets [ and ]
 
      */
-    var myArr = ['bond', 007, function () {
-    }, true];
+    var myArr = ['bond', 007, function () {}, true];
+
+    console.log("index 0: ", myArr[0]);
+    document.write("<br>" + "index 0: ", myArr[0]);
+
+    console.log("index 0: ", myArr[1]);
+    document.write("<br>" + "index 1: ", myArr[1]);
+
+    console.log("index 0: ", myArr[2]);
+    document.write("<br>" + "index 2: ", myArr[2]);
+
+    console.log("index 0: ", myArr[3]);
+    document.write("<br>" + "index 3: ", myArr[3]);
+
+
+//document.write("<br>" +);
+
 
     /*
      - arrays can hold any value type, separated by comma
@@ -205,7 +230,9 @@
      2.  console.log the sum of all the numbers in an array
 
      ********************************************/
-
+    var myArr1 = [10, 50, 100, 200];
+    console.log("The sum is: " , myArr1[0] + myArr1[1] + myArr1[2] + myArr1[3]);
+    document.write("<br>" +"The sum is: ",  myArr1[0] + myArr1[1] + myArr1[2] + myArr1[3]);
 
     /*******************************************
 
@@ -222,8 +249,15 @@
 
      ********************************************/
 
+    var myArray = new Array();
+    myArray[0] = "baseball";
+    myArray[1] = "football";
+    myArray[2] = "basketball";
 
-        // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
+alert(myArray[0] + ' , ' + myArray[1] +', ' + myArray[2]);
+    //alert(myArray);
+
+    // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
     console.log('------ conditionals ----------');
 
     /*
