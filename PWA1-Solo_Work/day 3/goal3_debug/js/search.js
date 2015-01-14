@@ -1,5 +1,5 @@
 // 14 total error
-	 myfunction = function () {
+	 myfunction = function () {      //Function didn't have a variable name to it
 
 	};
 
@@ -10,12 +10,12 @@
 
 	// Validates search query
 	//var validate == function(query){ (BEFORE)
-	function validateForm(query) { //AFTER
+	function validateForm(query) { //AFTER  //Validate was spelled wrong and needed to have form attached
 
 
 		// Trim whitespace from start and end of search query
-		while (query.charAt(0) === " ") {
-			query = query.substring(1, query.length);
+		while (query.charAt(0) === " ") {      //Boolean was not equaled to anything. 3 equal signs needed to be added.
+			query = query.substring(1, query.length); //Substring was not typed correctly to be highlighted.
 		}
 		while (query.charAt(query.length - 1) === "") {
 			query = query.substring(0, query.length - 1);
@@ -23,12 +23,12 @@
 
 			// Check search length, must have 3 characters
 			if (query.length < 3) {
-				alert("Your search query is too small, try again.");
+				alert("Your search query is too small, try again."); //Missing quotation at the end of the sentence.
 
 				// (DO NOT FIX THE LINE DIRECTLY BELOW)
 				searchInput.focus();
 				return;
-			}
+			}       //Extra bracket was added.
 
 			search(query);
 		}
@@ -50,7 +50,7 @@
 		}
 		// each db[i] is a single video item, each title ends with a pipe "|"
 		// save a lowercase variable of the video title
-		var dbTitleEnd = db[i].indexOf('|');
+		var dbTitleEnd = db[i].indexOf('|');  //title end wasn't written correctly.
 		var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
 
 		// loop through the user's search query words
