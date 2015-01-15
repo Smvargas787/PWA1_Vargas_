@@ -1,7 +1,10 @@
 // 14 total error
 	 myfunction = function () {      //Function didn't have a variable name to it
 
-	};
+
+
+//encapusulation - self executing
+	//(function(){
 
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
 	var resultsDIV = document.getElementById("results"),
@@ -9,32 +12,35 @@
 		currentSearch = '';
 
 	// Validates search query
-	//var validate == function(query){ (BEFORE)
-	function validateForm(query) { //AFTER  //Validate was spelled wrong and needed to have form attached
+	var validate = function(query){  //Fixed error, replaced double equal with single equal.
+
 
 
 		// Trim whitespace from start and end of search query
-		while (query.charAt(0) === " ") {      //Boolean was not equaled to anything. 3 equal signs needed to be added.
+		while (query.charAt(0) === " ") {      //Fixed error, 3 equal signs needed to be added.
 			query = query.substring(1, query.length); //Substring was not typed correctly to be highlighted.
 		}
 		while (query.charAt(query.length - 1) === "") {
 			query = query.substring(0, query.length - 1);
 
+		}
 
 			// Check search length, must have 3 characters
 			if (query.length < 3) {
 				alert("Your search query is too small, try again."); //Missing quotation at the end of the sentence.
 
+
+
 				// (DO NOT FIX THE LINE DIRECTLY BELOW)
 				searchInput.focus();
 				return;
-			}       //Extra bracket was added.
+			}  //Extra bracket was added.
 
 			search(query);
-		}
+		};
 
 		// Finds search matches
-		var search = function (query) {
+		var search = function (query) { //Fixed error by adding curly braces.
 
 		};
 
@@ -63,7 +69,7 @@
 			var compare = dbitem.indexOf(qitem);
 			if (compare !== -1) {
 				results.push(db[i]);
-			}
+
 
 			results.sort();
 
@@ -79,7 +85,7 @@
 			var noMatch = function () {
 				var html = '' +
 					'<p>No Results found.</p>' +
-					'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>';
+					'<p> style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'; //Beginning P wasn't closed.
 				resultsDIV.innerHTML = html;
 			};
 
@@ -94,12 +100,12 @@
 				// loop through all the results search() function
 				for (var i = 0, j = results.length; i < j; i++) {
 
-				}
+				}   //There was no closing bracket.
 
 				// title of video ends with pipe
 				// pull the title's string using index numbers
 				dbTitleEnd = results[i].indexOf('|');
-				title = results[i].substring(0, titleEnd);
+				title = results[i].substring(0, dbTitleEnd); //No variable was selected.
 
 				// pull the video url after the title
 				url = results[i].substring(results[i].indexOf('|') + 1, results[i].length);
@@ -114,7 +120,7 @@
 			// THE LINE DIRECTLY BELOW IS CORRECT
 			document.forms[0].onsubmit = function () {
 				var query = searchInput.value;
-				validateForm(query);
+				validate(query);
 			};
 			// return false is needed for most events - this will be reviewed in upcoming course material
 			// THE LINE DIRECTLY BELOW IS CORRECT
@@ -122,4 +128,4 @@
 
 		}
 
-	}
+	}}(); //There were too many unconnected parenthesis, semicolons & brackets placed.
