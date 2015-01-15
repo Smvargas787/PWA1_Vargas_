@@ -1,6 +1,6 @@
 /*
- Name: 
- Date: 
+ Name: Selena Vargas
+ Date: 1/15/15
  Assignment: Goal1: Assignment: Duel1
 */
 
@@ -10,7 +10,7 @@
     console.log("FIGHT!!!");
 
     //player name
-    var playerOneName = "Spiderman";
+  /*  var playerOneName = "Spiderman";
     var playerTwoName = "Batman";
 
     //player damage
@@ -20,6 +20,11 @@
     //player health
     var playerOneHealth = 100;
     var playerTwoHealth = 100;
+*/
+
+    var fighter1 = ["Spiderman", 20, 100]; //Created array for players
+    var fighter2= ["Batman", 20, 100];     //Create array for players
+
 
     var round=0;
 
