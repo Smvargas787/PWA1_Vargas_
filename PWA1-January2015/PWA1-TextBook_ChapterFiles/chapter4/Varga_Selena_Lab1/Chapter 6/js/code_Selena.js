@@ -24,17 +24,17 @@ function init() { //Put function to wrap around text because it's the first thin
 
 
 
-    var myGreenText = document.getElementById("greenness");  //
-    myGreenText.innerHTML = "GREEN PLANET";
-    myGreenText.setAttribute("class" , "greentext");
+    var myGreenText = document.getElementById("greenness");  //Takes from html to show up on webpage
+    myGreenText.innerHTML = "GREEN PLANET";             //Takes the text from the html onto the webpage
+    myGreenText.setAttribute("class" , "greentext");  //Sets the color to green due to the html code
 
-    var myRedText = document.getElementById("redness");
-    myRedText.innerHTML = "RED PLANET";
-    myRedText.setAttribute("class" , "redtext");
+    var myRedText = document.getElementById("redness"); //Takes from html to show up on webpage
+    myRedText.innerHTML = "RED PLANET"; //Takes the text from the html onto the webpage
+    myRedText.setAttribute("class" , "redtext");//Sets the color to green due to the html code
 
-    var myBlueText = document.getElementById("blueness");
-    myBlueText.innerHTML = "BLUE PLANET";
-    myBlueText.setAttribute("class" , "bluetext");
+    var myBlueText = document.getElementById("blueness");  //Takes from html to show up on webpage
+    myBlueText.innerHTML = "BLUE PLANET";           //Takes the text from the html onto the webpage
+    myBlueText.setAttribute("class" , "bluetext");   //Sets the color to green due to the html code
 
 }
 window.onload = init; //Waits for the window to complete load to access the html code

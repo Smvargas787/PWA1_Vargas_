@@ -19,15 +19,15 @@ Date: 1-21-15
     var image = eventObject.target;
     var name = image.id;
   console.log("Vance made me press " + name); //Sets up the consoles to repeat.
-    name = "images/" + name + ".jpg";
+    name = "images/" + name + ".jpg";        //Puts in the sentences for the consoles.
     image.src = name;
-  setTimeout(reblur, 2000, image);
+  setTimeout(reblur, 2000, image);           //Sets up the timer for the images to blur again
  }
 
- function reblur(image){
+ function reblur(image){            //Calls out the blur back into place
     //var image = image.target
   var name = image.id;
-    name = "images/" + name + "blur.jpg";
+    name = "images/" + name + "blur.jpg";       //Finds the image
     image.src = name;
  }
 
