@@ -136,7 +136,6 @@ function makeCar() {
 }makeCar();
 
 
-
 function displayCar(car) {
 
     console.log("MAKES has this many Keys: " +Object.keys(makes).length);
@@ -152,7 +151,14 @@ function displayCar(car) {
     document.write("<br>"+"YEARS has this many Keys: " +Object.keys(years).length);
     document.write("<br>"+"COLORS has this many Keys: " +Object.keys(colors).length);
     document.write("<br>"+"CONVERTIBLE has this many Keys: " +Object.keys(convertible).length);
+
+    for(var key in car) {
+        document.write("<br>", "For in Loop Results: ", car[key], " ");
+        console.log("For in Loop Results: ", car[key]);
+    };
+
 }
+
 
 var carToSell = makeCar();
 
