@@ -1,6 +1,6 @@
 /*
- Name: 
- Date: 
+ Name: Selena Vargas
+ Date: 1/23/15
  Assignment: Goal1: Assignment: Duel1
 */
 
